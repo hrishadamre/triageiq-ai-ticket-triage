@@ -1,7 +1,8 @@
+streamlit
 pandas
 numpy
 scikit-learn
 xgboost
 matplotlib
 plotly
-streamlit
+openai

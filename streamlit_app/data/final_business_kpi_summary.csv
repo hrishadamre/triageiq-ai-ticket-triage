@@ -1,0 +1,7 @@
+business_kpi,current_problem,how_triageiq_helps,measurement_method
+First Response Time,"Agents spend time manually reading, routing, and drafting responses.","TriageIQ predicts priority, recommends routing, and drafts a response immediately.",Compare average first response time before vs. after TriageIQ.
+Missed High-Priority Tickets,Urgent tickets can be buried inside the queue and handled too late.,The high-priority detection model flags urgent tickets for faster human review.,Track high-priority recall and false negative rate.
+Routing Accuracy,"Wrong routing causes handoffs, delays, and repeated triage work.",The grouped routing model recommends the correct broad support group.,Compare AI-recommended route with final human-approved route.
+SLA Breach Risk,Managers may not know which tickets are likely to become late.,The SLA risk score flags tickets needing faster attention.,"Track SLA breach rate, high-risk ticket outcomes, and escalation delay."
+Agent Workload,Support agents spend time on repetitive triage and first-response writing.,"AI assists with classification, routing, and draft response generation.",Estimate minutes saved per ticket and total monthly hours saved.
+Customer Satisfaction,Slow response and poor routing reduce customer trust.,Faster acknowledgement and better routing can improve customer experience.,Compare CSAT before vs. after TriageIQ deployment.

@@ -1,0 +1,8 @@
+config_name,value,description
+normal_priority_threshold,0.2,"Below this probability, ticket is treated as Normal priority."
+high_priority_threshold,0.55,"At or above this probability, ticket is treated as High priority."
+auto_route_confidence_threshold,0.8,Auto-route only when routing confidence is at least this value.
+manual_review_routing_threshold,0.5,"Below this routing confidence, manual triage is required."
+human_review_required,True,All AI-generated responses require human review before sending.
+sla_method,rule_based,SLA risk uses transparent business-rule scoring in this prototype.
+routing_model,grouped_queue_routing_model_with_keyword_override,Routing uses grouped categories plus keyword override for obvious billing/access tickets.

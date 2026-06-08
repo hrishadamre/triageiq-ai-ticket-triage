@@ -1,0 +1,10 @@
+section,summary
+Business Problem,"Support teams spend significant time manually reading, prioritizing, routing, and responding to tickets."
+Target Customer,"SaaS, IT, e-commerce, and customer support teams handling medium-to-high ticket volume."
+AI Solution,"TriageIQ predicts priority, recommends a routing group, scores SLA risk, and drafts a first response for human review."
+Main AI Models,A high-priority detection model and an improved grouped routing model using ticket text.
+Routing Improvement,The final workflow uses grouped routing categories plus keyword overrides for obvious access and billing issues.
+SLA Approach,Rule-based SLA risk scoring is used because optional SLA ML models did not show strong predictive signal.
+Human-in-the-Loop Design,"AI outputs are recommendations. Support agents review priority, routing, and response drafts before action."
+Business Value,"Faster first response, fewer missed urgent tickets, improved routing consistency, and reduced manual triage effort."
+Limitations,"Some datasets are synthetic or anonymized, routing groups are broader than original queues, and production deployment would require real company data and monitoring."

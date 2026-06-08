@@ -1,0 +1,4 @@
+confidence_bucket,ticket_count,accuracy,avg_confidence
+Low confidence (<0.50),516,50.39,0.446
+Medium confidence (0.50-0.80),2559,72.37,0.655
+High confidence (>=0.80),2454,95.56,0.905

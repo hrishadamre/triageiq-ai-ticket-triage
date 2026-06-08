@@ -1,0 +1,41 @@
+demo_id,subject,predicted_priority,priority_high_probability,priority_action,predicted_routing_team,routing_confidence,routing_action,routing_method,sla_risk_score,sla_risk_level,sla_breach_probability,sla_action,final_recommendation,human_review_required,human_review_reason,first_response_draft,expected_business_scenario,body,clean_ticket_text,routing_text,sla_method_used,product,category,channel,region,subscription_type,customer_tenure_months,previous_tickets,issue_complexity_score,customer_segment,language,tags
+1,Payment gateway down for all customers,High,0.7656,Escalate immediately,Billing,0.9,Auto-route to predicted queue,Keyword override: billing/payment issue,12,High SLA Risk,0.95,Escalate or assign immediately,Escalate to human agent immediately,TRUE,priority requires agent review; SLA risk should be monitored by a support agent; AI-generated response should be reviewed before sending,"Hello,
+
+Thank you for contacting support regarding: ""Payment gateway down for all customers"". Your ticket has been assigned a High priority and routed to the Billing team for immediate investigation. Expect a response as soon as possible. 
+
+Please share any relevant invoice numbers, payment references, or screenshots to help us resolve this faster.
+
+Best regards,
+TriageIQ Support Team",High urgency revenue-impacting issue,Customers are unable to complete checkout. Multiple users are reporting failed payment transactions since this morning.,payment gateway down for all customers customers are unable to complete checkout. multiple users are reporting failed payment transactions since this morning.,payment gateway down for all customers customers are unable to complete checkout. multiple users are reporting failed payment transactions since this morning. payment checkout transaction outage billing,Rule-based SLA risk score,payment gateway,payment problem,web form,north america,enterprise,36,8,9,corporate,english,payment checkout transaction outage billing
+2,Need password reset,Needs Review,0.315,Send to human triage review,Technical / Product Support,0.9,Auto-route to predicted queue,Keyword override: access/account issue,1,Low SLA Risk,0.1,Normal handling,Send to human triage review before routing,TRUE,priority requires agent review; AI-generated response should be reviewed before sending,"Hello,
+
+Thank you for contacting support regarding: ""Need password reset"". Your ticket has been routed to the Technical / Product Support team. Expect a response within 1 business day. 
+
+Please share any error messages or recent changes to help our team investigate faster.
+
+Best regards,
+TriageIQ Support Team",Routine access issue,I forgot my password and cannot log in to my account. Please help me reset it.,need password reset i forgot my password and cannot log in to my account. please help me reset it.,need password reset i forgot my password and cannot log in to my account. please help me reset it. login password account access,Rule-based SLA risk score,web portal,login issue,email,north america,basic,8,1,2,individual,english,login password account access
+3,Laptop screen flickering during meetings,Normal,0.1164,Normal priority queue,Technical / Product Support,0.8598,Auto-route to predicted queue,ML grouped routing model,5,Medium SLA Risk,0.5,Review queue and monitor closely,Assign quickly and monitor SLA,TRUE,SLA risk should be monitored by a support agent; AI-generated response should be reviewed before sending,"Hello,
+
+Thank you for contacting support regarding: ""Laptop screen flickering during meetings"". Your ticket has been received and was flagged for careful review. Your ticket will then be routed to the Technical / Product Support team. You should expect a response in a few hours to 1 business day. 
+
+Please share any error messages, browser/device details, or recent changes to help our team investigate faster.
+
+Best regards,
+TriageIQ Support Team",Medium hardware support issue,My laptop screen keeps flickering whenever I connect it to the external monitor during client meetings.,laptop screen flickering during meetings my laptop screen keeps flickering whenever i connect it to the external monitor during client meetings.,laptop screen flickering during meetings my laptop screen keeps flickering whenever i connect it to the external monitor during client meetings. hardware laptop monitor device,Rule-based SLA risk score,internal device,hardware,chat,north america,premium,18,3,5,small business,english,hardware laptop monitor device
+4,API returning 500 errors,High,0.5919,Escalate immediately,Technical / Product Support,0.9406,Auto-route to predicted queue,ML grouped routing model,11,High SLA Risk,0.95,Escalate or assign immediately,Escalate to human agent immediately,TRUE,priority requires agent review; SLA risk should be monitored by a support agent; AI-generated response should be reviewed before sending,"Hello,
+
+Thank you for contacting support regarding: ""API returning 500 errors"". Your ticket has been assigned a High priority and routed to the Technical / Product Support team for immediate investigation. Expect a response as soon as possible. 
+
+Please share any error messages, timestamps, or recent changes to help our team investigate faster.
+
+Best regards,
+TriageIQ Support Team",High urgency technical issue,Our production API integration is failing with repeated 500 errors. This is blocking order processing for our operations team.,api returning 500 errors our production api integration is failing with repeated 500 errors. this is blocking order processing for our operations team.,api returning 500 errors our production api integration is failing with repeated 500 errors. this is blocking order processing for our operations team. api technical error production integration,Rule-based SLA risk score,api service,performance issue,web form,north america,enterprise,24,5,8,corporate,english,api technical error production integration
+5,Question about invoice,Needs Review,0.2301,Send to human triage review,Billing,0.9,Auto-route to predicted queue,Keyword override: billing/payment issue,1,Low SLA Risk,0.1,Normal handling,Send to human triage review before routing,TRUE,priority requires agent review; AI-generated response should be reviewed before sending,"Hello,
+
+Thank you for contacting support regarding: ""Question about invoice"". Your ticket has been received and was flagged for careful review. Your ticket will then be routed to the Billing team. You should expect a response in a few hours to 1 business day.
+
+Please share the invoice number, payment reference, or a screenshot of the charge if available to help us resolve this faster.
+
+Best regards,
+TriageIQ Support Team",Low or medium billing inquiry,I have a question about a recent invoice charge. Can someone explain what this fee is for?,question about invoice i have a question about a recent invoice charge. can someone explain what this fee is for?,question about invoice i have a question about a recent invoice charge. can someone explain what this fee is for? invoice billing charge payment,Rule-based SLA risk score,billing system,billing question,email,north america,basic,6,0,2,individual,english,invoice billing charge payment

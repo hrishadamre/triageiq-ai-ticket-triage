@@ -1,0 +1,10 @@
+risk_area,why_it_matters,mitigation
+Missed high-priority tickets,A truly urgent customer issue may not be escalated quickly.,"Optimize for high recall, use Needs Review zone, and require human escalation workflow."
+Too many false high-priority alerts,Agents may become overloaded or ignore alerts.,Use High / Needs Review / Normal labels instead of forcing every case into High or Not High.
+Wrong queue routing,A ticket sent to the wrong group may bounce between teams and take longer to resolve.,Use confidence thresholds. Auto-route only when confidence is high; otherwise require human review.
+Weak SLA ML model,A weak predictive model can create misleading risk scores.,Use transparent rule-based SLA scoring in the prototype and state this limitation clearly.
+Synthetic or anonymized data limitation,Synthetic datasets may be cleaner or more balanced than real customer support data.,"Label datasets clearly and treat results as prototype evidence, not production performance."
+Privacy and sensitive ticket content,"Tickets may contain names, emails, account IDs, IPs, logs, or other sensitive information.",Remove unnecessary PII fields and redact sensitive text before using AI systems.
+AI-generated response errors,"Drafted responses may be incomplete, incorrect, or too confident.",Do not auto-send AI-generated responses; require support agent review before sending.
+Data leakage,Using future workflow fields can make model performance look better than real deployment performance.,Use only real-time-safe features for deployment-facing models.
+Language and fairness limitation,"The model may perform differently across languages, customer groups, or ticket styles.","Monitor performance by language, customer segment, and channel before production deployment."

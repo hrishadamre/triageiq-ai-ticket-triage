@@ -1,0 +1,6 @@
+demo_id,subject,predicted_priority,priority_high_probability,predicted_routing_team,routing_confidence,sla_risk_level,final_recommendation,human_review_required
+1,Payment gateway down for all customers,High,0.766,Billing,0.9,High SLA Risk,Escalate to human agent immediately,True
+2,Need password reset,Needs Review,0.315,Technical / Product Support,0.9,Low SLA Risk,Send to human triage review before routing,True
+3,Laptop screen flickering during meetings,Normal,0.116,Technical / Product Support,0.86,Medium SLA Risk,Assign quickly and monitor SLA,True
+4,API returning 500 errors,High,0.592,Technical / Product Support,0.941,High SLA Risk,Escalate to human agent immediately,True
+5,Question about invoice,Needs Review,0.23,Billing,0.9,Low SLA Risk,Send to human triage review before routing,True

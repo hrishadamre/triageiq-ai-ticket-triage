@@ -1,0 +1,8 @@
+kpi,value,business_meaning
+Total Tickets,"200,000",Total support tickets available for dashboard analysis.
+SLA Breach Rate,50.02%,Percentage of tickets that missed the promised support deadline.
+Escalation Rate,50.21%,Percentage of tickets escalated for additional support.
+Average First Response Time,36.31 hours,Average time before the first response to the customer.
+Average Resolution Time,120.54 hours,Average time taken to resolve support tickets.
+Average Customer Satisfaction,3.00 / 5,Average customer satisfaction score across tickets.
+High SLA Risk Tickets,39.70%,Percentage of tickets flagged as high SLA risk by TriageIQ.

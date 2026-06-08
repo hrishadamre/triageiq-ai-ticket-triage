@@ -1,0 +1,9 @@
+area,summary
+Problem,"Support teams manually read, prioritize, route, and respond to tickets, creating delays and inconsistent handling."
+Solution,"TriageIQ is an AI-assisted support triage system that predicts priority, recommends routing, scores SLA risk, and drafts first responses."
+Priority Model,Uses ticket text to detect high-priority tickets. Optimized for recall because missing urgent tickets is more costly than reviewing extra tickets.
+Routing Model,Uses grouped business routing categories to reduce label overlap and improve routing reliability.
+SLA Risk,Uses transparent rule-based scoring because optional SLA ML models did not show strong predictive signal.
+Human-in-the-Loop,AI outputs are recommendations. Human agents review routing decisions and response drafts before action.
+Business Value,"Reduces manual triage effort, catches urgent tickets earlier, improves routing consistency, and speeds up customer acknowledgement."
+Limitations,"Some datasets are synthetic/anonymized; routing uses broader groups; production use would require real company data, monitoring, and retraining."
