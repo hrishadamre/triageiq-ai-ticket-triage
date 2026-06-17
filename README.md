@@ -30,6 +30,28 @@ The system is designed as an **agent-assist workflow**, not a fully automated re
 
 ---
 
+## App Preview
+
+### Dashboard Overview
+
+Shows the main TriageIQ dashboard with key business metrics, the prediction pipeline, and core system capabilities.
+
+![TriageIQ Dashboard Overview](assets/screenshots/triageiq_dashboard_overview.png)
+
+### High-Priority Escalation Example
+
+Shows how TriageIQ identifies an urgent payment issue, routes it to Billing, flags high SLA risk, and recommends immediate human escalation.
+
+![TriageIQ High Priority Live Demo](assets/screenshots/triageiq_live_demo_high_priority.png)
+
+### Human Review Example
+
+Shows how TriageIQ handles an uncertain invoice-related ticket by assigning it to review instead of blindly auto-routing it.
+
+![TriageIQ Needs Review Live Demo](assets/screenshots/triageiq_live_demo_needs_review.png)
+
+---
+
 ## Business Problem
 
 | Challenge | Impact |
@@ -145,18 +167,6 @@ The final output includes:
 
 ---
 
-## App Preview
-
-### Dashboard
-
-![Dashboard Preview](assets/screenshots/triageIQ_dashboard.jpg)
-
-### Live Triage Demo
-
-![Live Triage Demo](assets/screenshots/triageIQ_live_demo.jpg)
-
----
-
 ## Tech Stack
 
 | Category | Tools |
@@ -190,10 +200,12 @@ triageiq-ai-ticket-triage/
 │   └── utils/
 ├── reports/
 │   ├── TriageIQ_Project_Report.pdf
-│   ├── TriageIQ_Final_Presentation.pdf
-├── assets/
-    ├── screenshots/
-    └── demo/
+│   └── TriageIQ_Final_Presentation.pdf
+└── assets/
+     └── screenshots/
+        ├── triageiq_dashboard_overview.png
+        ├── triageiq_live_demo_high_priority.png
+        └── triageiq_live_demo_needs_review.png
 
 ```
 
@@ -203,12 +215,14 @@ triageiq-ai-ticket-triage/
 
 | File / Folder | Purpose |
 |---|---|
-| `notebooks/` | Final modeling notebook with cleaning, training, evaluation, and output generation |
-| `streamlit_app/app.py` | Main Streamlit application |
-| `streamlit_app/models/` | Final trained priority and routing models |
-| `streamlit_app/data/` | Final CSV files used by dashboard and demo |
-| `reports/` | Final report, presentation, and detailed documentation |
-| `assets/screenshots/` | App screenshots used in README |
+| [`notebooks/`](notebooks/) | Final modeling notebook with cleaning, training, evaluation, and output generation |
+| [`streamlit_app/app.py`](streamlit_app/app.py) | Main Streamlit application |
+| [`streamlit_app/README.md`](streamlit_app/README.md) | App setup instructions and required files |
+| [`streamlit_app/models/`](streamlit_app/models/) | Final trained priority and routing models |
+| [`streamlit_app/data/`](streamlit_app/data/) | Final CSV files used by dashboard and demo |
+| [`reports/TriageIQ_Project_Report.pdf`](reports/TriageIQ_Project_Report.pdf) | Final project report |
+| [`reports/TriageIQ_Final_Presentation.pdf`](reports/TriageIQ_Final_Presentation.pdf) | Final presentation deck |
+| [`assets/screenshots/`](assets/screenshots/) | App screenshots used in this README |
 
 ---
 
@@ -217,7 +231,7 @@ triageiq-ai-ticket-triage/
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/triageiq-ai-ticket-triage.git
+git clone https://github.com/hrishadamre/triageiq-ai-ticket-triage.git
 cd triageiq-ai-ticket-triage
 ```
 
@@ -243,6 +257,8 @@ python -m streamlit run streamlit_app/app.py
 
 Open the local URL shown in the terminal.
 
+For more app-specific setup details, see [`streamlit_app/README.md`](streamlit_app/README.md).
+
 ---
 
 ## Optional LLM Support
@@ -256,19 +272,7 @@ If an OpenAI API key is provided, the app can optionally generate more customize
 | Without API key | ML predictions + rule-based SLA + template response draft |
 | With API key | ML predictions + rule-based SLA + LLM-generated response draft |
 
-If using the optional LLM feature, create:
-
-```text
-streamlit_app/.streamlit/secrets.toml
-```
-
-Add:
-
-```toml
-OPENAI_API_KEY = "your-key-here"
-```
-
-Do not commit this file to GitHub.
+Do not commit API keys, `.env` files, or `secrets.toml` files to GitHub.
 
 ---
 
@@ -307,29 +311,13 @@ Do not commit this file to GitHub.
 
 ---
 
-## Project Status
+<div align="center">
 
-| Component | Status |
-|---|---|
-| Data cleaning and modeling notebook | Complete |
-| Priority detection model | Complete |
-| Grouped routing model | Complete |
-| SLA risk scoring | Complete |
-| Streamlit app | Working locally |
-| Reports and documentation | Complete |
-| Improving SLA model | In progress |
+### Author - **Hrishad Amre**  
+Business Analyst / Data Analyst / Product Analytics Portfolio Project  
 
----
+<a href="https://www.linkedin.com/in/hrishadamre/">LinkedIn</a> • 
+<a href="https://github.com/hrishadamre">GitHub</a> • 
+<a href="mailto:hrishad@umd.edu">Email</a>
 
-<p align="center">
-      Author : <b>Hrishad Amre</b><br>
-      <sub>
-       · MS Information Systems · University of Maryland
-      </sub>
-</p>
-
-<p align="center">
-  <sub>
-    Applied AI · Business Analytics · Streamlit · Responsible AI
-  </sub>
-</p>
+</div>
